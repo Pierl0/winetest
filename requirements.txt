@@ -11,6 +11,7 @@ joblib
 memoized-property
 gcsfs
 termcolor
-uvicorn
+uvicorn[standard]
+gunicorn
 fastapi
 pydantic
