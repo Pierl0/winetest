@@ -5,12 +5,16 @@ import numpy as np
 import json
 
 # load model
-clf = load('lr.joblib')
+clf = load('wine_model.joblib')
 
 # Define a Data Model for your feature Matrix
 class WineProperties(BaseModel):
     alcohol: float
     volatile_acidity: float
+    sulphates: float
+    citric_acid: float
+    total_sulfur_dioxide: float
+    density: float
     # This data model is easy to scale to add more features
 
 # Make a prediction using a Data Mode with Pydantic BaseModel
